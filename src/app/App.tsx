@@ -113,7 +113,7 @@ export default function App() {
         <section className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-rose-200 text-rose-500 rounded-full px-4 py-1.5 text-sm font-medium mb-6 shadow-sm">
             <Zap size={13} className="fill-rose-400 text-rose-400" />
-            2025 신입 부원 모집 중
+            2026 신입 부원 모집 중
           </div>
 
           <div className="mb-4">
@@ -303,7 +303,7 @@ export default function App() {
               {[
                 { label: "모집 대상", value: "전공 무관 누구나" },
                 { label: "활동 방식", value: "주 1회 정기 모임" },
-                { label: "지원 방법", value: "카카오톡 오픈채팅" },
+                { label: "지원 방법", value: "아래 버튼으로 입력" },
               ].map((info) => (
                 <div key={info.label} className="bg-rose-50 rounded-2xl py-4 px-3 border border-rose-100">
                   <div className="text-[#8B5A6B] text-xs font-medium mb-1">{info.label}</div>
@@ -312,19 +312,22 @@ export default function App() {
               ))}
             </div>
 
-            <button
-              className="inline-flex items-center gap-2 bg-[#E8527A] text-white font-bold px-8 py-3.5 rounded-full text-base hover:bg-[#D4456D] transition-colors shadow-md shadow-rose-200 hover:shadow-lg hover:shadow-rose-300 hover:-translate-y-0.5 transition-all duration-200"
+            <a
+              href="https://forms.gle/8Gkb72xQxakhNngu5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#E8527A] text-white font-bold px-8 py-3.5 rounded-full text-base hover:bg-[#D4456D] shadow-md shadow-rose-200 hover:shadow-lg hover:shadow-rose-300 hover:-translate-y-0.5 transition-all duration-200"
             >
               지원하기
               <ChevronRight size={16} />
-            </button>
+            </a>
           </div>
         </section>
 
         {/* ── FOOTER ── */}
         <footer className="text-center text-[#C0909F] text-xs pb-8">
           <p className="font-semibold text-[#8B5A6B] text-sm mb-1">코딩 소모임 타이레놀 💊</p>
-          <p>코딩의 두통을 해결해 드립니다 · 2025년 모집 진행 중</p>
+          <p>코딩의 두통을 해결해 드립니다 · 2026년 모집 진행 중</p>
         </footer>
 
       </div>
